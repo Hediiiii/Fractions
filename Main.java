@@ -1,5 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Fractions.toStrings());
+        System.out.println(Fraction.Fraction());
     }
 }

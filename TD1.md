@@ -17,7 +17,7 @@ Dans cet exercice, vous créerez une classe `Fraction` représentant un nombre r
 
 1. Sur la forge, créez le dépôt (_repository_) `SimpleFraction`;
 En terme de *commits*, quelle différence constatez-vous entre cocher une (ou plusieurs) des cases *Initialize this repository with* et n'en cocher aucune ?
-    > On nous propose d'initialiser le depôt avec un "Read Me" 
+    > On nous propose d'initialiser le depôt avec un "ReadMe.md" 
 
     *Pour la suite, ne cochez aucune de ces cases*.
 1. Localement, configurez `git` avec votre nom (`user.name`) et votre email (`user.email`) (cf. [Personnalisation de Git](https://git-scm.com/book/fr/v2/Personnalisation-de-Git-Configuration-de-Git));
@@ -44,27 +44,33 @@ Validez les changements;
 Vous utiliserez le protocole `https` pour cela;
 Vérifiez avec le navigateur;
     ```bash
-    # Git commit et Git push
+
+    #  git add -A 
+       git commit -m "premier depot"
+       git remote add https://github.com/Hediiiii/Fractions.git
+       git push 
     ```
 1. Sur la forge, ajoutez un fichier de documentation `README.md`.
 Quelle syntaxe est utilisée pour ce fichier ?
-    > Répondre ici
+    > README.md est un fichier au format Markdown
+
 1. Récupérez localement les modifications effectuées sur la forge.
     ```bash
-    # Répondre ici
+    # Git log 
     ```
 1. Ajoutez les répertoires et fichiers issus de la compilation aux fichiers ignorés par `git` (cf. [`.gitignore` pour Java](https://github.com/github/gitignore/blob/main/Java.gitignore));
     ```bash
-    # Copier ici le contenu de `.gitignore`
+    # Fractions.class et Main.class
     ```
 1. Retirez les fichiers de configuration de l'IDE du projet;
     ```bash
-    # Répondre ici
+    # On est sur Vscode donc pas de création de fichier
     ```
     Ajoutez-les aux fichiers ignorés par `git`.
-    ```bash
+    ``` Vscode
     # Copier ici les modifications de `.gitignore`
-    ```
+    ''' Vscode
+
 1. Configurez l'accès par clé publique/clé privée à la forge (cf. [Connecting to GitHub with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)).
     > Expliquez la procédure de façon synthétique
 
