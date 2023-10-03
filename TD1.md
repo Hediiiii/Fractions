@@ -63,7 +63,7 @@ Quelle syntaxe est utilisée pour ce fichier ?
     # Fractions.class et Main.class
     ```
 1. Retirez les fichiers de configuration de l'IDE du projet;
-    ```bash
+    ```*.class
     # On est sur Vscode donc pas de création de fichier
     ```
     Ajoutez-les aux fichiers ignorés par `git`.
