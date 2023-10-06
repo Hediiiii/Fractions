@@ -1,23 +1,12 @@
-class Main {
+public class Main{
     public static void main(String[] args) {
-       //System.out.println("fraction\n");
-        Fraction fraction = new Fraction(12,3);
-        String res  = fraction.toString();
-        System.out.println(res);
-
-        Fraction frac1 = new Fraction(12,3);
-         assert frac1.toString().equals("12/3");
-
-
-        Fraction frac2 = new Fraction(12);
-         assert frac2.toString().equals("12/1");
-
-
-        Fraction frac3 = new Fraction();
-         assert frac3.toString().equals("0/1");
-
-        Fraction frac_double = new Fraction(3, 4);
-         assert frac_double.doubleValue() == 0.75;
-
+        Fractions num1 = new Fractions(20, 1);
+        Fractions num2 = new Fractions(20, 3);
+        final Fractions ZERO = new Fractions();
+        final Fractions UN = new Fractions(1);
+        Fractions res = num1.add(num2);
+        num1.test_egal(num2);
+        System.out.println(num2.doublevalue());
     }
+
 }
